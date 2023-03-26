@@ -1,0 +1,123 @@
+label{
+    padding: 1rem;
+    width: 11rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+.item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.preview{
+  
+        width: 210mm;
+        height: 297mm;
+        position: sticky;
+        top: 10px;
+        display: grid;
+        grid-template-columns: 150mm 60mm;
+        grid-template-rows: 35mm 262mm;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.main{
+    background-color: rgb(238, 238, 238);
+    padding: 2rem;
+}
+.sidebar{
+    line-height: 1.6;
+    font-family: Nunito, sans-serif;
+    font-size: .8rem;
+    color: rgb(51, 51, 51);
+    box-sizing: border-box;
+    margin: 0px;
+    overflow-wrap: break-word;
+    padding: 2rem;
+    background-color: rgb(221, 221, 221);
+   
+}
+img{
+    line-height: 1.6;
+    font-family: Nunito, sans-serif;
+    font-size: 1.6rem;
+    color: rgb(51, 51, 51);
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    overflow-wrap: break-word;
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.preview >header{
+   display: block;
+        grid-column: span 2 / auto;
+        padding: 2rem;
+        background-color: rgb(20, 62, 114);
+        color: rgb(238, 238, 238);
+
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    overflow-wrap: break-word; 
+}
+article{
+    line-height: 1.6;
+    font-family: Nunito, sans-serif;
+    font-size: 1.6rem;
+    color: rgb(51, 51, 51);
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+article>div{
+    line-height: 1.6;
+    font-family: Nunito, sans-serif;
+    font-size: 1.6rem;
+    color: rgb(51, 51, 51);
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    overflow-wrap: break-word;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+article>div>div{
+    
+    
+    width: 25%;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+.underline{
+    
+        border-bottom: 1px solid rgb(204, 204, 204);
+        color: rgb(20, 62, 114);
+  
+}
+
+.sidebar>article>div{
+    display: flex;
+    flex-direction:column;
+    width:100%
+    
+}
+.side{
+    overflow-wrap:anywhere;
+    font-size: small;
+}

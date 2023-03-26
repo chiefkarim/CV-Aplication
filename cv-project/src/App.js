@@ -17,6 +17,10 @@ class App extends React.PureComponent {
     };
     this.add = this.add.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.input = this.input.bind(this);
+  }
+  input(e) {
+    this.setState({ ...this.state, photo: URL.createObjectURL(e) });
   }
   handleChange(e, type, id) {
     this.name = e.currentTarget.name;
@@ -132,7 +136,11 @@ class App extends React.PureComponent {
         <header className="App-header">
           {/*Include Edit button For each Input*/}
           <h1>{this.Name}</h1>
-          <General state={this.state} handleChange={this.handleChange} />
+          <General
+            state={this.state}
+            handleChange={this.handleChange}
+            input={this.input}
+          />
           <Education state={this.state} handleChange={this.handleChange} />
           <div
             style={{

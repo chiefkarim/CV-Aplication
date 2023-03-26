@@ -56,7 +56,7 @@ export class Preview extends React.Component {
           </article>
         </div>
         <div className="sidebar">
-          <img src={this.props.state.photo} />
+          <img src={this.props.state.photo} accept="image/*" />
           <article>
             <h3 className="underline">Personal Details</h3>
             <div className="sc-jSgupP ljLyro">

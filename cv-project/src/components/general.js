@@ -58,7 +58,7 @@ class General extends React.Component {
           <input
             type="file"
             name="photo"
-            onChange={(e) => this.props.handleChange(e)}
+            onChange={(e) => this.props.input(e.target.files[0])}
           />
         </div>
       </section>
